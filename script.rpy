@@ -4,16 +4,16 @@ label start:
     scene bedroom
 
     show boy at right_pos
+    show dad at left_pos1
+    show mom at left_pos2
 
-    show dad_calm at left_pos
+    dad @ talk 'Привет, малыш!'
 
-    father 'Привет, малыш!'
+    boy @ talk 'Привет!'
 
-    boy 'Привет!'
+    mom @ talk 'У нас есть для тебя небольшой сюрприз'
 
-    mother 'У нас есть для тебя небольшой сюрприз'
-
-    boy 'Какой?'
+    boy @ talk 'Какой?'
 
     # Показываем карандаши
     window hide
@@ -36,7 +36,9 @@ label start:
 # Берём карандаши
 label take_pencils:
 
-    boy 'Охуеть спасибо папаша!'
+    show dad happy at left_pos1
+
+    boy happy 'Ого, спасибо!'
 
     return
 

@@ -1,18 +1,46 @@
 ﻿# Игра начинается здесь:
 label start:
 
-    scene bg room
+    scene bedroom
 
-    show boy 
+    show boy at right_pos
 
-    show father
+    show dad_calm at left_pos
 
-    boy 'Эх.. если бы ты знал, что я сейчас хочу'
+    father 'Привет, малыш!'
 
-    father 'Ну и что же ты хочешь?'
+    boy 'Привет!'
 
-    boy 'Я хачу питсы'
+    mother 'У нас есть для тебя небольшой сюрприз'
 
-    father 'А хуитсы ты не хочешь?'
+    boy 'Какой?'
+
+    # Показываем карандаши
+    window hide
+    show bg_dark with dissolve
+    show pencils_export at show_item with easeintop
+
+    menu:
+        'Взять карандаши':
+            hide bg_dark
+            hide pencils_export
+            jump take_pencils
+
+        'Не брать карандаши':
+            hide bg_dark
+            hide pencils_export
+            jump dont_take_pencils
 
     return
+
+# Берём карандаши
+label take_pencils:
+
+    boy 'Охуеть спасибо папаша!'
+
+    return
+
+# Не берём карандаши
+label dont_take_pencils:
+
+    'Мальчик решил, что рисовать не для него, стал программистом и теперь живёт на вокзале'

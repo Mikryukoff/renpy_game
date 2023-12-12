@@ -106,7 +106,7 @@ define config.end_game_transition = None
 ## После начала игры этот параметр можно изменить с помощью "window show",
 ## "window hide" и "window auto".
 
-define config.window = "auto"
+define config.window = "hide"
 
 
 ## Переходы, используемые при показе и скрытии диалогового окна

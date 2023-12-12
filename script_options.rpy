@@ -2,6 +2,7 @@
 define g_boy = Character('Мальчик', color='#c8ffc8', image='g_boy')
 define g_dad = Character('Папа', color='#ff80ff', image='g_dad')
 define g_mother = Character('Мама', color='00ffff', image='g_mother')
+define g_mc = Character('Мальчик', color='#c8ffc8', image='g_mc')
 
 # Координаты расположения спрайтов
 init:
@@ -11,9 +12,9 @@ init:
     $ left_pos2 = Position(xalign=0.3, yalign=1.0)
 
 # Переменные 
+#
 # Меню выбора истории
 define friends = True
 define school = True
 define parents = True
 define painting = True
-define story_count = 0

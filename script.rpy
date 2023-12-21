@@ -124,10 +124,11 @@ label scene_after_lunch:
             show pencils_export at show_item with easeintop
 
             g_boy 'Какие же вы красивые, наконец я смогу вас опробовать!'
-            'Тут должна быть мини-игра (наверно)'
 
             hide bg_dark
             hide pencils_export
+
+            $ my_drawing = draw_logic.Draw.main(background='mini_game.png')
 
     scene bedroom
     show g_boy at right_pos
@@ -137,9 +138,15 @@ label scene_after_lunch:
 
     g_boy @ happy 'Конечно! Смотри как здорово получилось.'
 
+    show work_zone
+    show expression my_drawing
+
     g_mother @ talk 'Ого! Как же здорово у тебя выходит! Этот рисунок так и веет радостью и уютом.' 
 
     g_mother @ talk_explain 'Не забрасывай своё хобби, я уверена, у тебя талант!'
+
+    hide work_zone
+    hide my_drawing
 
     g_boy @ curious 'Нет конечно, ты что! Я уже решил, хочу стать профессиональным художником, ну или дизайнером.'
 

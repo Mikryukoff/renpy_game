@@ -319,7 +319,7 @@ label boy_accepted:
 # Комната в общаге
 label student_room:
 
-    scene future_bedroom
+    scene dorm
     show g_mc at center
 
     g_mc @ hand_curious 'Ох, эти поезда очень утомляют, но нужно привыкать, теперь частенько кататься туда-сюда...'

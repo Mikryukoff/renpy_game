@@ -6,6 +6,7 @@ define g_mc = Character('Семён', color='#c8ffc8', image='g_mc')
 define g_friend = Character('Денис', color='ff00ff', image='g_friend')
 define g_professor = Character('Профессор', color='ffff00', image='g_professor')
 define mc = Character('Семён', color='#c8ffc8', image='mc')
+define rector = Character('Ректор', color='#ff80ff', image='rector')
 
 # Координаты расположения спрайтов
 init:
@@ -30,3 +31,6 @@ define graphic = True
 define cat = True
 define sport = True
 define advert_banner = True
+
+# Исправляем ошибку
+define error = False
